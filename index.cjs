@@ -120,7 +120,7 @@ app.use((err, req, res, next) => {
 });
 
 app.get("/",(req,res)=>{
-  res.render("listing.ejs");
+  res.redirect("/listings");
 })
 
 // Server Startup
