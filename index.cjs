@@ -119,6 +119,9 @@ app.use((err, req, res, next) => {
   res.status(status).render("./listings/error.ejs", { status, message });
 });
 
+app.get("/",(req,res)=>{
+  res.render("listing.ejs");
+})
 
 // Server Startup
 app.listen(8080, () => {
