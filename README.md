@@ -13,7 +13,6 @@ Live Demo: [🌍 Visit Wanderlust](https://wanderlust-4s6f.onrender.com)
 - 🏠 Create, Edit, and Delete Listings (Only by the Owner)
 - 🌐 Location Map Integration with Mapbox
 - 🔒 Protected Routes with Authorization Middleware
-- 📸 Image Upload (via Cloudinary)
 - ⚡ Flash messages for user feedback
 
 ---
