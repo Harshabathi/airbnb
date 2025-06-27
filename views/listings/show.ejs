@@ -4,6 +4,10 @@
   const coordinates = <%- JSON.stringify(list.geometry.coordinates) %>;
 </script>
 
+<% if (typeof currUser !== "undefined" && currUser) { %>
+  <p>Welcome, <%= currUser.username %></p>
+<% } %>
+
     <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-lg-8">

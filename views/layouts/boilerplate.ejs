@@ -27,14 +27,15 @@
     <%- include("../includes/navbar.ejs") %>
 
 
-        <% if (success && success.length> 0) { %>
-            <div class="alert alert-success alert-dismissible fade show custom-alert-top mx-auto " role="alert">
-                <%=success%>
+        <% if (typeof success !=='undefined' && success.length> 0) { %>
+            <div class="alert alert-success alert-dismissible fade show custom-alert-top mx-auto" role="alert">
+                <%= success %>
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
             <% } %>
 
-                <% if (error && error.length> 0) { %>
+
+                <% if (typeof error !='undefined' && error.length> 0) { %>
                     <div class="alert alert-danger alert-dismissible fade show custom-alert-top mx-auto " role="alert">
                         <%=error%>
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>

@@ -37,7 +37,6 @@ module.exports.postlisting = async (req, res, next) => {
 };
 
 
-
 module.exports.showlisting = async (req, res) => {
   const { id } = req.params;
   const list = await Listing.findById(id).populate({ path: "reviews", populate: { path: "author" } }).populate("owner");
@@ -45,6 +44,8 @@ module.exports.showlisting = async (req, res) => {
     req.flash("error", "Searched listing does not exist");
     return res.redirect("/listings");
   }
+  console.log("req.user is:", req.user);
+
   res.render("./listings/show.ejs", { list });
   
 }
