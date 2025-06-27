@@ -6,7 +6,7 @@
   "description": "A travel website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.cjs"
   },
   "author": "Harsha",
   "license": "ISC",
