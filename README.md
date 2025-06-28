@@ -23,7 +23,7 @@ Live Demo: [🌍 Visit Wanderlust](https://wanderlust-4s6f.onrender.com)
 - **Backend**: Node.js, Express
 - **Database**: MongoDB Atlas
 - **Authentication**: Passport.js (Local Strategy)
-- **Others**: Cloudinary (Image Hosting), Mapbox (Maps), Dotenv, Express-Session, Connect-Mongo
+- **Others**: Mapbox (Maps), Dotenv, Express-Session, Connect-Mongo
 
 ---
 
